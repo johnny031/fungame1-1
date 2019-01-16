@@ -1,0 +1,126 @@
+img{
+    width: 130px;
+    height: 117px;
+    background-color:transparent;
+}
+
+#table{
+    margin: 0px auto;
+    position: absolute;
+    top: 70px;
+    left: 455px;
+    
+}
+
+h1{
+    text-align: center;
+    text-shadow: 2px 2px 0px #FFFFFF, 5px 4px 0px rgba(0,0,0,0.15);
+    color: #333333;
+}
+
+
+
+#boom_background{
+    display: None; 
+    position:absolute; 
+    top:0%; 
+    left:0%; 
+    width:100%; 
+    height:100%;
+    z-index:4;
+}
+
+
+
+h4{
+    position: absolute;
+    top: 22px;
+    left: 1230px;
+    font-family: Microsoft JhengHei;
+    font-weight: bold;
+}
+
+h6{
+    position: absolute;
+    top: 55px;
+    left: 1220px;
+    font-family: Microsoft JhengHei;
+}
+
+#blue_kid_number{
+    font-size: 33px;
+    color: blue;
+}
+
+#red_kid_number{
+    font-size: 33px;
+    color: red;
+}
+
+#change_blue{
+    position: absolute; 
+    top: 150px; 
+    left: 1225px;
+}
+
+#change_red{
+    position: absolute; 
+    top: 205px; 
+    left: 1225px;
+}
+
+#answer_button{
+    position: absolute; 
+    top: 260px; 
+    left: 1225px;
+}
+
+#blue_turn, #red_turn, #answer {
+    font-family: Microsoft JhengHei;
+    font-weight: bold;
+}
+
+
+
+#alert {
+    position: absolute;
+    z-index: 5;
+    top:0px;
+    left:300px;
+    font-size: 100px;
+    font-family: Microsoft JhengHei;
+    margin: 10px;
+    font-weight: 550;
+    color: #FFFFFF;
+    text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;    
+}
+
+#alert_win{
+    position: absolute;
+    z-index: 5;
+    top:0px;
+    left:400px;
+    font-size: 100px;
+    font-family: Microsoft JhengHei;
+    margin: 10px;
+    font-weight: 550;
+    color: #FFFFFF;
+    text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;    
+}
+
+#alert_lose{
+    position: absolute;
+    z-index: 5;
+    top:250px;
+    left:450px;
+    font-size: 100px;
+    font-family: Microsoft JhengHei;
+    margin: 10px;
+    font-weight: 550;
+    color: #FFFFFF;
+    text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;    
+}
+
+
+
+
