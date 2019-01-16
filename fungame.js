@@ -1,9 +1,13 @@
 document.addEventListener('DOMContentLoaded', function() {
+    $('#yes_button').hide();
+    $('#no_button').hide();
+    $('#ok_button').hide();
+    $('#question').hide();
     var pictures = [];
     var blue_kid_number = 8;
     var red_kid_number = 7;
 
-    for(var i=1; i<26; i++){
+    for(var i=1; i<56; i++){
         
         var board = "board" + i + ".png";
         pictures.push(board);
@@ -216,15 +220,32 @@ document.addEventListener('DOMContentLoaded', function() {
 
     }
 
+
     document.querySelector("#answer_button").onclick = function(){
-        var a = document.getElementById('table2');
-        if(a.style.display === "none"){
-            a.style.display = "inline";
-        }
-        else{
-            a.style.display = "none";
-        }
-        
+        $('#question').show();
+        $('#yes_button').show();
+        $('#no_button').show();
     }
 
+    
+    $('#yes_button').on('click', function(){
+        $('#yes_button').hide();
+        $('#no_button').hide();
+        $('#question').hide();
+        $('#table2').show();
+        $('#ok_button').show();
+    });
+
+    $('#no_button').on('click', function(){
+        $('#yes_button').hide();
+        $('#no_button').hide();
+        $('#question').hide();
+    });
+
+    $('#ok_button').on('click', function(){
+        $('#ok_button').hide();
+        $('#table2').hide();
+    });
+   
 });
+
