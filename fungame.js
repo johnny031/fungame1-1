@@ -94,6 +94,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
         if (blue_kid_number === -1) {
             $('#alert_win').html("恭喜藍隊獲勝!!!");
+            $("a").unbind("click");
         }
         else if ($('#blue_or_red').html() === "藍隊回合!"){
             $('#alert').html("恭喜找到藍色小花!!!");
@@ -116,6 +117,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         if (red_kid_number === -1) {
             $('#alert_win').html("恭喜紅隊獲勝!!!");
+            $("a").unbind("click");
         }
 
         else if ($('#blue_or_red').html() === "紅隊回合!"){
@@ -225,6 +227,7 @@ document.addEventListener('DOMContentLoaded', function() {
         $('#question').show();
         $('#yes_button').show();
         $('#no_button').show();
+        $('#answer_button').attr('disabled', true);
     }
 
     
@@ -240,11 +243,13 @@ document.addEventListener('DOMContentLoaded', function() {
         $('#yes_button').hide();
         $('#no_button').hide();
         $('#question').hide();
+        $('#answer_button').attr('disabled', false);
     });
 
     $('#ok_button').on('click', function(){
         $('#ok_button').hide();
         $('#table2').hide();
+        $('#answer_button').attr('disabled', false);
     });
    
 });
