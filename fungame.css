@@ -387,8 +387,8 @@
 
   @media(max-width:550px) {
     img{
-        width: 70px;
-        height: 65px;
+        width: 68px;
+        height: 63px;
         background-color:transparent;
         position: static;
     }
@@ -404,7 +404,7 @@
         
         position: absolute;
         top: 34%;
-        left: 9%;
+        left: 6%;
     }
 
     #table2{
@@ -471,22 +471,21 @@
     #change_blue{
         position: absolute; 
         top: 60px; 
-        left: 265px;
+        left: 260px;
         font-size: 12px;
     }
     
     #change_red{
         position: absolute; 
         top: 100px; 
-        left:  265px;
+        left:  260px;
         font-size: 12px;
     }
     
     #answer_button{
         position: absolute; 
         top: 140px; 
-        left: 1225px;
-        left:  280px;
+        left:  275px;
         font-size: 12px;
     }
     
