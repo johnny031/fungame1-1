@@ -3,6 +3,11 @@
         width:145px; 
         height:125px;
     }
+
+    #answer_img{
+        width:30px;
+        height:30px;
+    }
     body{
         
         background-repeat: no-repeat;
@@ -400,6 +405,11 @@
         background-color:transparent;
         position: static;
     }
+
+    #answer_img{
+        width:28px;
+        height:28px;
+    }
     
     body{   
         background-repeat: no-repeat;
@@ -535,7 +545,7 @@
         position: absolute;
         z-index: 5;
         top:210px;
-        left:100px;
+        left:70px;
         font-size: 40px;
         font-family: Microsoft JhengHei;
         margin: 10px;
@@ -563,7 +573,7 @@
     }
     #ok_button{
         position:absolute; 
-        left:240px; 
+        left:227px; 
         top:263px; 
         width:47px; 
         height:35px;
