@@ -412,7 +412,7 @@
   @media(max-width:550px) {
     img{
         width: 68px;
-        height: 63px;
+        height: 68px;
         background-color:transparent;
     }
 
@@ -456,7 +456,7 @@
     
     h4{
         position: absolute;
-        top: 60px;
+        top: 80px;
         left: 35px;
         font-family: Microsoft JhengHei;
         font-weight: bold;
@@ -467,7 +467,7 @@
     
     h6{
         position: absolute;
-        top: 95px;
+        top: 115px;
         left: 30px;
         font-family: Microsoft JhengHei;
         word-break: keep-all;
@@ -486,21 +486,21 @@
     
     #change_blue{
         position: absolute; 
-        top: 60px; 
+        top: 80px; 
         left: 260px;
         font-size: 12px;
     }
     
     #change_red{
         position: absolute; 
-        top: 100px; 
+        top: 120px; 
         left:  260px;
         font-size: 12px;
     }
     
     #answer_button{
         position: absolute; 
-        top: 140px; 
+        top: 160px; 
         left:  275px;
         font-size: 12px;
     }
