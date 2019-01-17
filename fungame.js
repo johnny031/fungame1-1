@@ -3,17 +3,13 @@ document.addEventListener('DOMContentLoaded', function() {
     $('#no_button').hide();
     $('#ok_button').hide();
 
-    var pictures = [];
+    var pictures = ["公主","規","暴龍","油畫","空氣","俠盜","時鐘","牙線","橘子","推","貨櫃","溪","面紙","雨傘","衣櫥",
+                    "鼠","丟","寫","死","法條","手錶","鉛筆","書","丘","珠寶","滑雪","紐西蘭","埃及","富","吉他","豎笛"];
     var blue_kid_number = 8;
     var red_kid_number = 7;
 
 
-    for(var i=1; i<56; i++){
-        
-        var board = "board" + i + ".png";
-        pictures.push(board);
-    }
-
+   
     for (j=0; j<5; j++){
 
         var tr = document.createElement("tr");
@@ -25,7 +21,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
             var td = document.createElement("td");
             td.setAttribute('id', j*5 + i + 1 );
+            td.setAttribute('style', "position:relative;" );
             
+            var div = document.createElement("div");
+            div.setAttribute('class', "text");
+
+            var t = document.createTextNode(pictures[number]);  
+            div.appendChild(t);
 
             var a = document.createElement("a");
             a.setAttribute('id','a' + j + "_" + i);
@@ -33,10 +35,11 @@ document.addEventListener('DOMContentLoaded', function() {
             
             var img = document.createElement("img");
             img.setAttribute('id','img' + j + "_" + i);
-            img.src = pictures[number];
+            img.src = "board0.png";
             
             a.appendChild(img);
-            td.appendChild(a); 
+            a.appendChild(div); 
+            td.appendChild(a);
             tr.appendChild(td);
             pictures.splice(number, 1);
          
@@ -90,6 +93,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     $('.blue').on('click', function(){
         $(this).children("img").attr("src","blue_flower.png");
+        $(this).children("img").attr("style","z-index: 1");
+        $(this).attr("style","cursor: default;");
         $(this).off('click');
         $('#blue_kid_number').html(blue_kid_number--);
     
@@ -113,6 +118,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     $('.red').on('click', function(){
         $(this).children("img").attr("src","red_flower.png");
+        $(this).children("img").attr("style","z-index: 1");
+        $(this).attr("style","cursor: default;");
         $(this).off('click');
         $('#red_kid_number').html(red_kid_number--);
 
@@ -138,6 +145,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     $('.none').on('click', function(){
         $(this).children("img").attr("src","shit.png");
+        $(this).children("img").attr("style","z-index: 1");
+        $(this).attr("style","cursor: default;");
         $(this).off('click');
         $('#alert').html("找到屎啦哈哈哈~~~");
         if ($('#blue_or_red').html() === "藍隊回合!") {
@@ -155,6 +164,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     $('.boom').on('click', function(){
         $(this).children("img").attr("src","boom_n.png");
+        $(this).children("img").attr("style","z-index: 1");
         $(this).off('click');
         document.body.background = "boom.jpg" 
         document.body.setAttribute("style","z-index:4");

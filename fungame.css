@@ -1,7 +1,21 @@
 @media(min-width:701px){
     img{
+        position: relative;;
         width:145px; 
         height:125px;
+    }
+    a{
+        cursor: pointer;
+    }
+    .text{
+        position: absolute;
+        top: 50%;  
+        left: 50%; 
+        transform: translate(-50%, -50%);
+        
+        font-family: Microsoft JhengHei;
+        font-weight: bold;
+        font-size: 153.1%;
     }
 
     #answer_img{
@@ -156,7 +170,7 @@
         top:38%; 
         width:70px; 
         height:40px;
-        z-index: 1;
+        z-index: 2;
     }
     
     #no_button{
@@ -165,7 +179,7 @@
         top:38%; 
         width:70px; 
         height:40px;
-        z-index: 1;
+        z-index: 2;
     }
     #ok_button{
         position:absolute; 
@@ -183,7 +197,7 @@
         top:20%; 
         width:30%; 
         height:30%;
-        z-index: 1;
+        z-index: 2;
     }
     
     #none_img{
@@ -198,9 +212,26 @@
   @media(min-width:551px) and (max-width: 700px){
 
     img{
+        position: relative;
         width:66px;
         height:58px;
     }
+    a{
+        cursor: pointer;
+    }
+
+    .text{
+        position: absolute;
+        top: 50%;  
+        left: 50%; 
+        transform: translate(-50%, -50%);
+
+        
+        font-family: Microsoft JhengHei;
+        font-weight: bold;
+        font-size: 70.8%;
+    }
+
 
     #answer_img{
         width:20px;
@@ -370,7 +401,7 @@
         top:36.5%; 
         width:42px; 
         height:30px;
-        z-index: 1;
+        z-index: 2;
     }
     
     #no_button{
@@ -379,7 +410,7 @@
         top:36.5%; 
         width:42px; 
         height:30px;
-        z-index: 1;
+        z-index: 2;
     }
     #ok_button{
         position:absolute; 
@@ -397,23 +428,34 @@
         top:20%; 
         width:30%; 
         height:30%;
-        z-index: 1;
+        z-index: 2;
     }
     
-    #none_img{
-        position:absolute; 
-        left:1406px; 
-        top:636px; 
-       visibility: hidden;
-    }
   }
 
 
   @media(max-width:550px) {
     img{
+        position: relative;
         width: 68px;
         height: 68px;
         background-color:transparent;
+    }
+
+    a{
+        cursor: pointer;
+    }
+
+  
+    .text{
+        position: absolute;
+        top: 50%;  
+        left: 50%; 
+        transform: translate(-50%, -50%);
+        cursor: default;
+        font-family: Microsoft JhengHei;
+        font-weight: bold;
+        font-size: 72.9%;
     }
 
     #answer_img{
@@ -566,7 +608,7 @@
         top:190px; 
         width:50px; 
         height:30px;
-        z-index: 1;
+        z-index: 2;
     }
     
     #no_button{
@@ -575,7 +617,7 @@
         top:190px; 
         width:50px; 
         height:30px;
-        z-index: 1;
+        z-index: 2;
     }
     #ok_button{
         position:absolute; 
@@ -583,7 +625,7 @@
         top:263px; 
         width:47px; 
         height:35px;
-        z-index: 1;
+        z-index: 2;
     }
     
     #question{
@@ -593,7 +635,7 @@
         top:100px; 
         width:300px; 
         height:150px;
-        z-index: 1;
+        z-index: 2;
     }
     
   }
