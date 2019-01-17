@@ -103,10 +103,10 @@ document.addEventListener('DOMContentLoaded', function() {
             $('#alert').html("QQ~找成藍小花ㄌ...");
             $('#blue_or_red').html("藍隊回合!");
         }
-        //setTimeout(stop, 1400);
-        //function stop(){
-        //   $('#alert').html("");
-        //}
+        setTimeout(stop, 1400);
+        function stop(){
+           $('#alert').html("");
+        }
         
     });
 
@@ -128,10 +128,10 @@ document.addEventListener('DOMContentLoaded', function() {
             $('#alert').html("QQ~找成紅小花ㄌ...");
             $('#blue_or_red').html("紅隊回合!");
         }
-        //setTimeout(stop, 1400);
-        //function stop(){
-        //    $('#alert').html("");
-        //}
+        setTimeout(stop, 1400);
+        function stop(){
+            $('#alert').html("");
+        }
     
     });
 
@@ -146,10 +146,10 @@ document.addEventListener('DOMContentLoaded', function() {
         else{
             $('#blue_or_red').html("藍隊回合!");
         }
-        //setTimeout(stop, 1400);
-        //function stop(){
-        //    $('#alert').html("");
-        //}
+        setTimeout(stop, 1400);
+        function stop(){
+            $('#alert').html("");
+        }
     });
 
     $('.boom').on('click', function(){
