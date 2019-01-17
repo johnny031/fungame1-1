@@ -7,6 +7,12 @@ document.addEventListener('DOMContentLoaded', function() {
     var blue_kid_number = 8;
     var red_kid_number = 7;
 
+    $("body").on("touchmove",function(event){
+         event.preventDefault;
+    }, false)
+
+    $("body").off("touchmove");
+
     for(var i=1; i<56; i++){
         
         var board = "board" + i + ".png";
