@@ -235,14 +235,18 @@ document.addEventListener('DOMContentLoaded', function() {
         $('#answer_button').attr('disabled', true);
     }
 
-    
+    var x = window.matchMedia("(max-width: 550px)")
+
     $('#yes_button').on('click', function(){
         $('#yes_button').hide();
         $('#no_button').hide();
         $('#question').hide();
         $('#table2').show();
         $('#ok_button').show();
-        $('#answer_background').show();
+        if (x.matches) { 
+            $('#answer_background').show();
+          }
+        
     });
 
     $('#no_button').on('click', function(){

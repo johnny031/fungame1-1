@@ -8,6 +8,11 @@
         width:30px;
         height:30px;
     }
+
+    #answer_background{
+        display: none;
+    }
+
     body{
         
         background-repeat: no-repeat;
@@ -200,6 +205,10 @@
     #answer_img{
         width:20px;
         height:20px;
+    }
+
+    #answer_background{
+        display: none;
     }
 
     .answer_td{
