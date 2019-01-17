@@ -5,7 +5,7 @@ img{
 }
 
 #table{
-    margin: 0px auto;
+    
     position: absolute;
     top: 70px;
     left: 455px;
@@ -13,7 +13,9 @@ img{
 }
 
 h1{
-    text-align: center;
+    position: absolute;
+    top: 8px;
+    left: 635px;
     text-shadow: 2px 2px 0px #FFFFFF, 5px 4px 0px rgba(0,0,0,0.15);
     color: #333333;
 }
@@ -154,6 +156,13 @@ h6{
     width:400px; 
     height:200px;
     z-index: 1;
+}
+
+#none_img{
+    position:absolute; 
+    left:1405px; 
+    top:200px; 
+    visibility: hidden;
 }
 
 
