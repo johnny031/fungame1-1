@@ -431,7 +431,7 @@
     #table{
         
         position: absolute;
-        top: 38%;
+        top: 40%;
         left: 6%;
     }
 
@@ -445,7 +445,7 @@
     
     h1{
         position: absolute;
-        top: 8px;
+        top: 20px;
         left: 80px;
         text-shadow: 2px 2px 0px #FFFFFF, 5px 4px 0px rgba(0,0,0,0.15);
         color: #333333;
@@ -456,7 +456,7 @@
     
     h4{
         position: absolute;
-        top: 80px;
+        top: 92px;
         left: 35px;
         font-family: Microsoft JhengHei;
         font-weight: bold;
@@ -467,7 +467,7 @@
     
     h6{
         position: absolute;
-        top: 115px;
+        top: 127px;
         left: 30px;
         font-family: Microsoft JhengHei;
         word-break: keep-all;
@@ -486,21 +486,21 @@
     
     #change_blue{
         position: absolute; 
-        top: 80px; 
+        top: 92px; 
         left: 260px;
         font-size: 12px;
     }
     
     #change_red{
         position: absolute; 
-        top: 120px; 
+        top: 132px; 
         left:  260px;
         font-size: 12px;
     }
     
     #answer_button{
         position: absolute; 
-        top: 160px; 
+        top: 172px; 
         left:  275px;
         font-size: 12px;
     }
