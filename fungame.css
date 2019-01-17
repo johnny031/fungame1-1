@@ -437,7 +437,7 @@
 
     #table2{
         position:absolute; 
-        left: 120px; 
+        left: 115px; 
         top:100px; 
         display:none;
         z-index: 2;
@@ -457,7 +457,7 @@
     h4{
         position: absolute;
         top: 102px;
-        left: 15px;
+        left: 25px;
         font-family: Microsoft JhengHei;
         font-weight: bold;
         word-break: keep-all;
@@ -468,7 +468,7 @@
     h6{
         position: absolute;
         top: 137px;
-        left: 10px;
+        left: 20px;
         font-family: Microsoft JhengHei;
         word-break: keep-all;
         font-size: 13px;
@@ -487,21 +487,21 @@
     #change_blue{
         position: absolute; 
         top: 102px; 
-        left: 240px;
+        left: 250px;
         font-size: 12px;
     }
     
     #change_red{
         position: absolute; 
         top: 142px; 
-        left:  240px;
+        left:  250px;
         font-size: 12px;
     }
     
     #answer_button{
         position: absolute; 
         top: 182px; 
-        left:  255px;
+        left:  265px;
         font-size: 12px;
     }
     
@@ -579,7 +579,7 @@
     }
     #ok_button{
         position:absolute; 
-        left:200px; 
+        left:195px; 
         top:263px; 
         width:47px; 
         height:35px;
