@@ -437,7 +437,7 @@
 
     #table2{
         position:absolute; 
-        left: 140px; 
+        left: 120px; 
         top:100px; 
         display:none;
         z-index: 2;
@@ -446,7 +446,7 @@
     h1{
         position: absolute;
         top: 30px;
-        left: 80px;
+        left: 60px;
         text-shadow: 2px 2px 0px #FFFFFF, 5px 4px 0px rgba(0,0,0,0.15);
         color: #333333;
         white-space: nowrap;
@@ -457,7 +457,7 @@
     h4{
         position: absolute;
         top: 102px;
-        left: 35px;
+        left: 15px;
         font-family: Microsoft JhengHei;
         font-weight: bold;
         word-break: keep-all;
@@ -468,7 +468,7 @@
     h6{
         position: absolute;
         top: 137px;
-        left: 30px;
+        left: 10px;
         font-family: Microsoft JhengHei;
         word-break: keep-all;
         font-size: 13px;
@@ -487,21 +487,21 @@
     #change_blue{
         position: absolute; 
         top: 102px; 
-        left: 260px;
+        left: 240px;
         font-size: 12px;
     }
     
     #change_red{
         position: absolute; 
         top: 142px; 
-        left:  260px;
+        left:  240px;
         font-size: 12px;
     }
     
     #answer_button{
         position: absolute; 
         top: 182px; 
-        left:  275px;
+        left:  255px;
         font-size: 12px;
     }
     
@@ -513,7 +513,7 @@
     #answer_background{
         display: none;
         position: absolute;
-        left: 58px; 
+        left: 38px; 
         top:49px;
         width:280px;
         height:280px;
@@ -524,9 +524,9 @@
     #alert {
         position: absolute;
         z-index: 5;
-        top:7px;
+        top:30px;
         left:0px;
-        font-size: 40px;
+        font-size: 39px;
         font-family: Microsoft JhengHei;
         margin: 10px;
         font-weight: 550;
@@ -537,8 +537,8 @@
     #alert_win{
         position: absolute;
         z-index: 5;
-        top:8px;
-        left:45px;
+        top:30px;
+        left:25px;
         font-size: 40px;
         font-family: Microsoft JhengHei;
         margin: 10px;
@@ -550,8 +550,8 @@
     #alert_lose{
         position: absolute;
         z-index: 5;
-        top:7px;
-        left:100px;
+        top:30px;
+        left:80px;
         font-size: 40px;
         font-family: Microsoft JhengHei;
         margin: 10px;
@@ -562,7 +562,7 @@
     
     #yes_button{
         position:absolute; 
-        left:110px; 
+        left:90px; 
         top:190px; 
         width:50px; 
         height:30px;
@@ -571,7 +571,7 @@
     
     #no_button{
         position:absolute; 
-        left:240px; 
+        left:220px; 
         top:190px; 
         width:50px; 
         height:30px;
@@ -579,7 +579,7 @@
     }
     #ok_button{
         position:absolute; 
-        left:220px; 
+        left:200px; 
         top:263px; 
         width:47px; 
         height:35px;
@@ -589,7 +589,7 @@
     #question{
         display: none;
         position:absolute; 
-        left:45px; 
+        left:25px; 
         top:100px; 
         width:300px; 
         height:150px;
