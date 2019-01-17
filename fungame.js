@@ -2,7 +2,6 @@ document.addEventListener('DOMContentLoaded', function() {
     $('#yes_button').hide();
     $('#no_button').hide();
     $('#ok_button').hide();
-    $('#question').hide();
     jQuery('body').unbind('touchmove');
     window.scrollTo(0,1);
     var pictures = [];
@@ -161,9 +160,11 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     $('.boom').on('click', function(){
-        $(this).children("img").attr("src","http://img.juimg.com/tuku/yulantu/130505/235075-1305051I34235.jpg");
+        $(this).children("img").attr("src","boom_n.png");
         $(this).off('click');
-        $("#boom_background").css("display","inline");
+        document.body.background = "boom.jpg" 
+        document.body.setAttribute("style","z-index:4");
+       
      
         if ($('#blue_or_red').html() === "紅隊回合!"){
             $('#alert_lose').html("紅隊落敗...");
@@ -171,6 +172,7 @@ document.addEventListener('DOMContentLoaded', function() {
         else{
             $('#alert_lose').html("藍隊落敗...");
         }
+        $("a").unbind("click");
     });
 
     
@@ -246,6 +248,7 @@ document.addEventListener('DOMContentLoaded', function() {
         $('#question').hide();
         $('#table2').show();
         $('#ok_button').show();
+        $('#answer_background').show();
     });
 
     $('#no_button').on('click', function(){
@@ -258,6 +261,7 @@ document.addEventListener('DOMContentLoaded', function() {
     $('#ok_button').on('click', function(){
         $('#ok_button').hide();
         $('#table2').hide();
+        $('#answer_background').hide();
         $('#answer_button').attr('disabled', false);
     });
    
