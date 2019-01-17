@@ -405,7 +405,6 @@
         width: 68px;
         height: 63px;
         background-color:transparent;
-        position: static;
     }
 
     #answer_img{
@@ -444,19 +443,6 @@
         white-space: nowrap;
         font-size: 30px;
     }
-    
-    
-    
-    #boom_background{
-        display: None; 
-        position:absolute; 
-        top:0%; 
-        left:0%; 
-        width:100%; 
-        height:100%;
-        z-index:4;
-    }
-    
     
     
     h4{
@@ -601,12 +587,6 @@
         z-index: 1;
     }
     
-    #none_img{
-        position:absolute; 
-        left:1406px; 
-        top:636px; 
-       visibility: hidden;
-    }
   }
 
 

@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     $('#yes_button').hide();
     $('#no_button').hide();
     $('#ok_button').hide();
-    jQuery('body').unbind('touchmove');
+
     var pictures = [];
     var blue_kid_number = 8;
     var red_kid_number = 7;
