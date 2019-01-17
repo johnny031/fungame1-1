@@ -188,7 +188,16 @@
 
     img{
         width:66px;
-        height:48px;
+        height:53px;
+    }
+
+    #answer_img{
+        width:20px;
+        height:20px;
+    }
+
+    .answer_td{
+        padding-bottom: 0px;
     }
     body{
         
@@ -206,8 +215,8 @@
 
     #table2{
         position:absolute; 
-        left: 2%; 
-        top:20%; 
+        left: 8%; 
+        top:34%; 
         display:none;
     }
     
@@ -359,8 +368,8 @@
     }
     #ok_button{
         position:absolute; 
-        left:12.5%; 
-        top:79.5%; 
+        left:11.5%; 
+        top:78%; 
         width:70px; 
         height:40px;
         z-index: 1;

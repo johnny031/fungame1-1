@@ -198,8 +198,9 @@ document.addEventListener('DOMContentLoaded', function() {
         for (i = 0; i < 5; i++) {   
 
             var td = document.createElement("td");
+            td.setAttribute('class','answer_td');
             var img = document.createElement("img");
-            img.style = "width:30px; height:30px;"
+            img.setAttribute('id', 'answer_img');
 
             if(array[j*5 + i] === "blue"){
                 img.setAttribute('src','blue.png');
