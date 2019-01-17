@@ -17,7 +17,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
         var tr = document.createElement("tr");
         tr.className = "row";
-
        
         
         for (i = 0; i < 5; i++) {            
@@ -25,6 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             var td = document.createElement("td");
             td.setAttribute('id', j*5 + i + 1 );
+            
 
             var a = document.createElement("a");
             a.setAttribute('id','a' + j + "_" + i);
