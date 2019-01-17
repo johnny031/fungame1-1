@@ -199,7 +199,7 @@
 
     img{
         width:66px;
-        height:53px;
+        height:58px;
     }
 
     #answer_img{
@@ -384,7 +384,7 @@
     #ok_button{
         position:absolute; 
         left:15%; 
-        top:78%; 
+        top:83%; 
         width:42px; 
         height:30px;
         z-index: 1;
@@ -525,7 +525,7 @@
         position: absolute;
         z-index: 5;
         top:7px;
-        left:10px;
+        left:0px;
         font-size: 40px;
         font-family: Microsoft JhengHei;
         margin: 10px;
