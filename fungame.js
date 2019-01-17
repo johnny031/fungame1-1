@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', function() {
     $('#no_button').hide();
     $('#ok_button').hide();
     jQuery('body').unbind('touchmove');
-    window.scrollTo(0,1);
     var pictures = [];
     var blue_kid_number = 8;
     var red_kid_number = 7;
