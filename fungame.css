@@ -3,32 +3,33 @@
         width: 130px;
         height: 117px;
         background-color:transparent;
-        position: static;
     }
     
     body{
-        background-size: 1536px 753px;
+        
         background-repeat: no-repeat;
+        background-size: 100% 100%;
+        height:100vh;
+        overflow:hidden;
     }
     
     #table{
-        position: absolute;
-        top: 70px;
-        left: 455px;
+        
+        text-align: center;
+        left: 32%;
+        margin: 0px auto;
     }
 
     #table2{
         position:absolute; 
-        left: 1250px; 
-        top:450px; 
+        left: 81%; 
+        top:60%; 
         display:none;
     }
     
     
     h1{
-        position: absolute;
-        top: 8px;
-        left: 635px;
+        text-align: center;
         text-shadow: 2px 2px 0px #FFFFFF, 5px 4px 0px rgba(0,0,0,0.15);
         color: #333333;
         white-space: nowrap;
@@ -37,7 +38,7 @@
     
     
     #boom_background{
-        display: None; 
+        display: none;
         position:absolute; 
         top:0%; 
         left:0%; 
@@ -50,8 +51,8 @@
     
     h4{
         position: absolute;
-        top: 22px;
-        left: 1230px;
+        top: 3%;
+        left: 80.5%;
         font-family: Microsoft JhengHei;
         font-weight: bold;
         word-break: keep-all;
@@ -61,8 +62,8 @@
     
     h6{
         position: absolute;
-        top: 55px;
-        left: 1220px;
+        top: 7%;
+        left: 80%;
         font-family: Microsoft JhengHei;
         word-break: keep-all;
     }
@@ -79,20 +80,20 @@
     
     #change_blue{
         position: absolute; 
-        top: 150px; 
-        left: 1225px;
+        top: 20%; 
+        left: 80.5%;
     }
     
     #change_red{
         position: absolute; 
-        top: 205px; 
-        left: 1225px;
+        top: 27%; 
+        left: 80.5%;
     }
     
     #answer_button{
         position: absolute; 
-        top: 260px; 
-        left: 1225px;
+        top: 34%; 
+        left: 80.5%;
     }
     
     #blue_turn, #red_turn, #answer, #yes, #no, #ok{
@@ -104,9 +105,10 @@
     
     #alert {
         position: absolute;
+        top: 0%;
+        left:20%;
         z-index: 5;
-        top:0px;
-        left:300px;
+       
         font-size: 100px;
         font-family: Microsoft JhengHei;
         margin: 10px;
@@ -118,8 +120,8 @@
     #alert_win{
         position: absolute;
         z-index: 5;
-        top:0px;
-        left:400px;
+        top:0%;
+        left:26%;
         font-size: 100px;
         font-family: Microsoft JhengHei;
         margin: 10px;
@@ -131,8 +133,8 @@
     #alert_lose{
         position: absolute;
         z-index: 5;
-        top:250px;
-        left:450px;
+        top:30%;
+        left:25%;
         font-size: 100px;
         font-family: Microsoft JhengHei;
         margin: 10px;
@@ -143,8 +145,8 @@
     
     #yes_button{
         position:absolute; 
-        left:650px; 
-        top:320px; 
+        left:42%; 
+        top:38%; 
         width:70px; 
         height:40px;
         z-index: 1;
@@ -152,16 +154,16 @@
     
     #no_button{
         position:absolute; 
-        left:815px; 
-        top:320px; 
+        left:54%; 
+        top:38%; 
         width:70px; 
         height:40px;
         z-index: 1;
     }
     #ok_button{
         position:absolute; 
-        left:1320px; 
-        top:620px; 
+        left:86%; 
+        top:83%; 
         width:70px; 
         height:40px;
         z-index: 1;
@@ -169,10 +171,10 @@
     
     #question{
         position:absolute; 
-        left:565px; 
-        top:200px; 
-        width:400px; 
-        height:200px;
+        left: 35%;
+        top:20%; 
+        width:30%; 
+        height:30%;
         z-index: 1;
     }
     
@@ -192,16 +194,18 @@
         position: static;
     }
     
-    body{
-        background-size: 1536px 753px;
+    body{   
         background-repeat: no-repeat;
+        background-size: 100% 100%;
+        height:100vh;
+        overflow:hidden;
     }
     
     #table{
         
         position: absolute;
-        top: 200px;
-        left: 30px;
+        top: 34%;
+        left: 9%;
     }
 
     #table2{
