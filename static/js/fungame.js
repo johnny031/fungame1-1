@@ -497,7 +497,7 @@ document.addEventListener("DOMContentLoaded", function() {
       .children("img")
       .attr("style", "z-index: 1");
     $(this).off("click");
-    document.body.background = "boom.jpg";
+    document.body.background = "static/img/boom.jpg";
     document.body.setAttribute("style", "z-index:4");
 
     if ($("#blue_or_red").html() === "紅隊回合!") {
