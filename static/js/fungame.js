@@ -592,7 +592,7 @@ document.addEventListener("DOMContentLoaded", function() {
   $("#ok_button").on("click", function() {
     $("#ok_button").hide();
     $("#table2").hide();
-    $("#answer_button").attr("disabled", false);
+    $("#answer_button").hide();
   });
 
   if (screen.width < screen.height) {
