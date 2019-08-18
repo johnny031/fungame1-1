@@ -571,15 +571,16 @@ document.addEventListener("DOMContentLoaded", function() {
   };
 
   document.querySelector("#qrcode_button").onclick = function() {
-    $("#qrcode").toggle();
+    $("#qrcode").slideToggle("slow");
   };
 
   $("#yes_button").on("click", function() {
     $("#yes_button").hide();
     $("#no_button").hide();
     $("#question").hide();
-    $("#table2").show();
-    $("#ok_button").show();
+    $("#answer_button").hide();
+    $(".table2_div").slideToggle("slow");
+    $("#ok_button").slideToggle("slow");
   });
 
   $("#no_button").on("click", function() {
@@ -590,9 +591,8 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
   $("#ok_button").on("click", function() {
-    $("#ok_button").hide();
-    $("#table2").hide();
-    $("#answer_button").hide();
+    $("#ok_button").slideToggle("slow");
+    $(".table2_div").slideToggle("slow");
   });
 
   if (screen.width < screen.height) {
