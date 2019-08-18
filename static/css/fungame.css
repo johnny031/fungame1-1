@@ -94,7 +94,8 @@ h6 {
 #answer,
 #yes,
 #no,
-#ok {
+#ok,
+#qrcode_text {
   font-family: Microsoft JhengHei;
   font-weight: bold;
 }
@@ -118,7 +119,8 @@ h6 {
 
 #change_blue,
 #change_red,
-#answer_button {
+#answer_button,
+#qrcode_button {
   padding: 8px;
   margin: 2px;
 }
@@ -207,7 +209,8 @@ h6 {
   }
   #change_blue,
   #change_red,
-  #answer_button {
+  #answer_button,
+  #qrcode_button {
     padding: 5px;
     margin: 2px;
   }
@@ -281,12 +284,14 @@ h6 {
   #blue_turn,
   #red_turn,
   #answer,
-  #ok {
+  #ok,
+  #qrcode_text {
     font-size: 2.6vh;
   }
   #change_blue,
   #change_red,
   #answer_button,
+  #qrcode_button,
   #ok_button {
     padding: 3px;
   }

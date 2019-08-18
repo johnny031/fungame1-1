@@ -1,4 +1,12 @@
 document.addEventListener("DOMContentLoaded", function() {
+  $(function() {
+    $("#qrcode").qrcode({
+      text: window.location.href,
+      render: "canvas",
+      width: 300,
+      height: 300
+    });
+  });
   var pictures = [
     "公主",
     "規",
@@ -560,6 +568,10 @@ document.addEventListener("DOMContentLoaded", function() {
     $("#yes_button").show();
     $("#no_button").show();
     $("#answer_button").attr("disabled", true);
+  };
+
+  document.querySelector("#qrcode_button").onclick = function() {
+    $("#qrcode").toggle();
   };
 
   $("#yes_button").on("click", function() {

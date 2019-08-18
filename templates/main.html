@@ -17,7 +17,7 @@
 
   <body background="/static/img/background.jpg">
     <h1>找回你的小花!</h1>
-
+    <div id="qrcode" style="display: none; text-align: center"></div>
     <h1 id="alert"></h1>
     <h1 id="alert_win"></h1>
     <h1 id="alert_lose"></h1>
@@ -53,8 +53,11 @@
                 <div id="red_turn">換紅隊回合!</div>
               </button>
               <br />
-              <button type="button" id="answer_button" class="btn btn-info">
-                <div id="answer">看答案</div>
+              <button type="button" id="qrcode_button" class="btn btn-info">
+                <div id="qrcode_text">掃描QRcode</div>
+              </button>
+              <button type="button" id="answer_button" class="btn btn-default">
+                <div id="answer">答</div>
               </button>
             </div>
           </div>
@@ -74,6 +77,9 @@
     <script src="static/js/fungame.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   </body>
+  <script type="text/javascript" src="/static/jquery.qrcode.min.js"></script>
+  <script type="text/javascript" src="/static/jquery.qrcode.js"></script>
+  <script type="text/javascript" src="/static/qrcode.js"></script>
   <script>
     var w = {{w | tojson}};
     var c = {{c | tojson}};
