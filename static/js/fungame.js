@@ -595,7 +595,7 @@ document.addEventListener("DOMContentLoaded", function() {
     $(".table2_div").slideToggle("slow");
   });
 
-  if (screen.width < screen.height) {
+  if ($(window).width() < $(window).height()) {
     $(".table_div")
       .removeClass("col-sm-7")
       .addClass("container-fluid");
@@ -608,7 +608,7 @@ document.addEventListener("DOMContentLoaded", function() {
     $(".right").addClass("col-6");
     $(".rm_when_sm").css("display", "none");
   }
-  if (screen.width > screen.height && screen.width < 1367) {
+  if ($(window).width() > $(window).height() && $(window).width() < 1367) {
     $(".rm_when_sm").css("display", "none");
     $(".table_div")
       .removeClass("col-sm-7")
@@ -619,7 +619,7 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 
   $(window).on("resize", function() {
-    if (screen.width < screen.height) {
+    if ($(window).width() < $(window).height()) {
       $(".table_div")
         .removeClass("col-sm-7")
         .addClass("container-fluid");
@@ -637,7 +637,7 @@ document.addEventListener("DOMContentLoaded", function() {
       }
     }
 
-    if (screen.width > screen.height && screen.width < 1367) {
+    if ($(window).width() > $(window).height() && $(window).width() < 1367) {
       $(".rm_when_sm").css("display", "none");
       $(".table_div")
         .removeClass("col-sm-7")
