@@ -446,8 +446,7 @@ $(document).ready(function() {
 
   // Connect to websocket
   var socket = io.connect(
-    location.protocol + "//" + document.domain + ":" + location.port,
-    { transports: ["websocket"] }
+    location.protocol + "//" + document.domain + ":" + location.port
   );
 
   // When connected
@@ -455,6 +454,7 @@ $(document).ready(function() {
     console.log("connected");
     document.querySelectorAll(".test").forEach(link => {
       link.onclick = () => {
+        console.log("clicked");
         const info = link.dataset.value;
 
         var $link = $("#" + info).children("a");
