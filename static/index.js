@@ -445,9 +445,7 @@ $(document).ready(function() {
   }
 
   // Connect to websocket
-  var socket = io.connect("https://fungame1.herokuapp.com/", {
-    autoConnect: true
-  });
+  var socket = io.connect(window.location.hostname);
 
   // When connected, configure buttons
   socket.on("connect", () => {
