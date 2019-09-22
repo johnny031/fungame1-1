@@ -446,7 +446,7 @@ $(document).ready(function() {
 
   // Connect to websocket
   var socket = io.connect(
-    location.protocol + "//" + document.domain + ":" + location.port
+    location.protocol + "//" + document.domain + ".herokuapp.com"
   );
 
   // When connected, configure buttons
