@@ -447,11 +447,12 @@ $(document).ready(function() {
   // Connect to websocket
   var socket = io.connect(
     location.protocol + "//" + document.domain + ":" + location.port,
-    { transports: ["websocket", "polling"] }
+    { transports: ["websocket"] }
   );
 
   // When connected
   socket.on("connect", () => {
+    console.log("connected");
     document.querySelectorAll(".test").forEach(link => {
       link.onclick = () => {
         const info = link.dataset.value;
