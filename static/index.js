@@ -447,7 +447,7 @@ $(document).ready(function() {
   // Connect to websocket
   var socket = io.connect(
     location.protocol + "//" + document.domain + ":" + location.port,
-    { transports: ["websocket"] }
+    { transports: ["websocket", "polling"] }
   );
 
   // When connected
