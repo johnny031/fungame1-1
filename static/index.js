@@ -445,7 +445,9 @@ $(document).ready(function() {
   }
 
   // Connect to websocket
-  var socket = io.connect(window.location.hostname);
+  var socket = io.connect(
+    location.protocol + "//" + "twtactx" + ":" + location.port
+  );
 
   // When connected, configure buttons
   socket.on("connect", () => {
