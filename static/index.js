@@ -446,7 +446,7 @@ $(document).ready(function() {
 
   // Connect to websocket
   var socket = io.connect(
-    location.protocol + "//" + "twtactx" + ":" + location.port
+    location.protocol + "//" + document.domain + ":" + location.port
   );
 
   // When connected, configure buttons
