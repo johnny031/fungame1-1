@@ -445,11 +445,12 @@ $(document).ready(function() {
   }
 
   // Connect to websocket
-  var socket = io.connect(window.location.hostname, {
-    transports: ["websocket"]
-  });
+  var socket = io.connect(
+    location.protocol + "//" + document.domain + ":" + location.port,
+    { transports: ["websocket"] }
+  );
 
-  // When connected, configure buttons
+  // When connected
   socket.on("connect", () => {
     document.querySelectorAll(".test").forEach(link => {
       link.onclick = () => {
@@ -472,6 +473,7 @@ $(document).ready(function() {
   });
 
   socket.on("do things", data => {
+    socket.io.opts.transports = ["polling", "websocket"];
     document.querySelectorAll(".test").forEach(link => {
       if (data.clicked.includes(link.dataset.value)) {
         link.style.pointerEvents = "none";
