@@ -447,12 +447,11 @@ $(document).ready(function() {
   // Connect to websocket
   var socket = io.connect(
     location.protocol + "//" + document.domain + ":" + location.port,
-    { transports: ["websocket"] }
+    { transports: ["websocket"], upgrade: false }
   );
 
   // When connected
   socket.on("connect", () => {
-    socket.io.opts.transports = ["polling", "websocket"];
     document.querySelectorAll(".test").forEach(link => {
       link.onclick = () => {
         const info = link.dataset.value;
@@ -474,7 +473,6 @@ $(document).ready(function() {
   });
 
   socket.on("do things", data => {
-    socket.io.opts.transports = ["polling", "websocket"];
     document.querySelectorAll(".test").forEach(link => {
       if (data.clicked.includes(link.dataset.value)) {
         link.style.pointerEvents = "none";
