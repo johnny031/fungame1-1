@@ -452,6 +452,7 @@ $(document).ready(function() {
 
   // When connected
   socket.on("connect", () => {
+    socket.io.opts.transports = ["polling", "websocket"];
     document.querySelectorAll(".test").forEach(link => {
       link.onclick = () => {
         const info = link.dataset.value;
