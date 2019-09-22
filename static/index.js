@@ -445,10 +445,9 @@ $(document).ready(function() {
   }
 
   // Connect to websocket
-  var socket = io.connect(
-    location.protocol + "//" + document.domain + ":" + location.port,
-    { transports: ["websocket"] }
-  );
+  var socket = io.connect(window.location.hostname, {
+    transports: ["websocket"]
+  });
 
   // When connected, configure buttons
   socket.on("connect", () => {
