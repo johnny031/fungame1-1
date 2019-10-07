@@ -52,5 +52,5 @@ def clear():
     red = 8
     emit("clear all", broadcast=True)
 
-
-
+if __name__ == '__main__':
+    socketio.run(app)
