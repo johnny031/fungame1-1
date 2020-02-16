@@ -16,7 +16,6 @@ var pictures = [
   "衣櫥",
   "鼠",
   "丟",
-  "死",
   "法條",
   "手錶",
   "鉛筆",
@@ -445,9 +444,7 @@ $(document).ready(function() {
   }
 
   // Connect to websocket
-  var socket = io.connect(
-    location.protocol + "//" + document.domain + ":" + location.port
-  );
+  var socket = io.connect(location.protocol + "//fungame1.herokuapp.com");
 
   // When connected
   socket.on("connect", () => {
